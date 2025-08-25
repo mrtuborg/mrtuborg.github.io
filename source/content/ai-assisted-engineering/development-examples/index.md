@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"AI-Assisted Development Examples","created":"2025-08-25T19:52:01.079+02:00","modified":"2025-08-25T21:49:02.171+02:00","tags":["ai-development","project-examples","cost-optimization","practical-applications"],"cssclasses":""}
+{"publish":true,"title":"AI-Assisted Development Examples","created":"2025-08-25T19:52:01.079+02:00","modified":"2025-08-25T23:35:48.812+02:00","tags":["ai-development","project-examples","cost-optimization","practical-applications"],"cssclasses":""}
 ---
 
 
@@ -19,7 +19,7 @@ This collection demonstrates how to apply the principles from the [Cline Cost Op
   - Video4Linux driver debugging and optimization
   - Device tree configuration and kernel module development
   - Memory-constrained environment considerations
-  - Integration with existing [Video4Linux journey](Clippings/embedded-systems/video4linux-mipi-journey/index.md)
+  - Integration with existing [Video4Linux journey](Digital%20Garden/embedded-systems/video4linux-mipi-journey/index.md)
 
 ### GStreamer Pipeline Development
 - **[GStreamer Pipeline Example](gstreamer-pipeline-example/index.md)** - Real-time video processing pipeline optimization

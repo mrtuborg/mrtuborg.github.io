@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-25T21:50:45.212+02:00","cssclasses":""}
+{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-25T23:39:59.383+02:00","cssclasses":""}
 ---
 
 
@@ -17,10 +17,26 @@ Everything here is a living document, continuously tended and evolved. Feel free
 
 ---
 
+## 🛠️ Embedded Systems
+
+*Where hardware meets software in constrained computing environments*
+
+- **🌳 [Video4Linux: MIPI CSI Camera Journey](embedded-systems/video4linux-mipi-journey/)** - Battle-tested insights from V4L2 drivers and MIPI cameras
+- **🌳 [ToF Camera Complete Guide](embedded-systems/tof-camera-complete-guide/)** - Comprehensive Time-of-Flight camera integration
+- **🌿 [Docker for Embedded Systems](embedded-systems/docker-embedded-guide/)** - Practical containerization in resource-constrained environments
+- **🌿 [Network Manager Connectivity](embedded-systems/network-manager-connectivity/)** - WiFi and cellular integration in embedded Linux
+- **🌱 [Docker Embedded Tutorials](embedded-systems/docker-embedded-tutorials/)** - Deep dive into container runtimes and optimization
+
+---
+
 ## 💻 Development Practices
 
 *Methodologies, processes, and wisdom from the trenches*
 
+- **🌳 [C Code Review Guide](development-practices/c-code-review-guide/)** - Comprehensive embedded C code review practices
+  - Safety and reliability focus for embedded systems
+  - Performance optimization and memory management
+  - Concurrency and interrupt handling patterns
 - **🌱 [Project Management](development-practices/project-management/)** - Workflows and organizational strategies
 
 ---
@@ -51,8 +67,9 @@ Everything here is a living document, continuously tended and evolved. Feel free
 
 *Leveraging AI tools to enhance development productivity while maintaining cost efficiency*
 
-- **🌳 [Cline Cost Optimization Guide](ai-assisted-engineering/cline-cost-optimization-guide/index.md)** - Comprehensive team guide for reducing AI development costs by 70-90%
-- **🌱 [Development Examples](ai-assisted-engineering/development-examples/index.md)** - Real-world project examples implementing cost optimization strategies
+- **🌳 [Cline Cost Optimization Guide](ai-assisted-engineering/cline-cost-optimization-guide/)** - Comprehensive team guide for reducing AI development costs by 70-90%
+- **🌿 [AI Project Maintenance](ai-assisted-engineering/ai-project-maintenance/)** - Strategies for maintaining AI-assisted projects
+- **🌱 [Development Examples](ai-assisted-engineering/development-examples/)** - Real-world project examples implementing cost optimization strategies
   - Embedded camera system development with V4L2 and MIPI CSI integration
   - GStreamer pipeline optimization and performance tuning
   - Knowledge management automation and workflow enhancement
@@ -74,6 +91,18 @@ Everything here is a living document, continuously tended and evolved. Feel free
 
 ---
 
+## Knowledge Interconnections
+
+This garden thrives on connections between domains:
+
+- **Hardware ↔ Software**: Embedded systems bridge physical and digital worlds
+- **Theory ↔ Practice**: Development practices refined through real-world application
+- **Individual ↔ Team**: Personal learning scaled to team methodologies
+- **Security ↔ Functionality**: Cybersecurity integrated into development workflows
+- **Manual ↔ Automated**: AI assistance enhancing traditional development practices
+
+---
+
 ## About This Garden
 
 This garden grows through:
@@ -81,6 +110,7 @@ This garden grows through:
 - **Interconnected growth** - Ideas linking and building upon each other  
 - **Learning in public** - Sharing the process, not just results
 - **Contextual exploration** - Multiple pathways through the knowledge
+- **Cross-pollination** - Insights from one domain enriching others
 
 *Last tended: 2025-08-25*
 

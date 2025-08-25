@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Cline Cost Optimization & Efficiency Guide","created":"2025-08-25T19:49:35.140+02:00","modified":"2025-08-25T21:47:44.730+02:00","tags":["cline","cost-optimization","ai-development","team-practices","productivity"],"cssclasses":""}
+{"publish":true,"title":"Cline Cost Optimization & Efficiency Guide","created":"2025-08-25T19:49:35.140+02:00","modified":"2025-08-25T23:35:53.446+02:00","tags":["cline","cost-optimization","ai-development","team-practices","productivity"],"cssclasses":""}
 ---
 
 
@@ -331,7 +331,7 @@ Total Potential Savings: 70-90%
 ## 🔗 Connected Knowledge
 
 ### Integration with Development Practices
-- **[C Code Review Guide](Clippings/c-code-review-guide/index.md)** - Applying AI assistance to code review processes
+- **[C Code Review Guide](Digital%20Garden/development-practices/c-code-review-guide/index.md)** - Applying AI assistance to code review processes
 - **[Project Management](../../development-practices/project-management/)** - Incorporating AI tools into project workflows
 - **[Embedded Systems](../../embedded-systems/)** - AI-assisted embedded development considerations
 
