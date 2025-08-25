@@ -6,6 +6,99 @@ on:
   workflow_dispatch:
 
 jobs:
+  link-health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Make link checker executable
+        run: chmod +x link_checker.py
+
+      - name: Run link health check
+        id: link_check
+        run: |
+          echo "🌱 Running Digital Garden Link Health Check..."
+
+          # Run link checker and capture output
+          if python3 link_checker.py --report link_health_report.md; then
+            echo "✅ Link checker completed successfully"
+            LINK_CHECK_SUCCESS=true
+          else
+            echo "⚠️ Link checker found issues"
+            LINK_CHECK_SUCCESS=false
+          fi
+
+          # Extract key metrics from the report
+          if [ -f "link_health_report.md" ]; then
+            TOTAL_FILES=$(grep "Total Files" link_health_report.md | grep -o '[0-9]\+' | head -1)
+            TOTAL_LINKS=$(grep "Total Links" link_health_report.md | grep -o '[0-9]\+' | head -1)
+            BROKEN_LINKS=$(grep "Broken Links" link_health_report.md | grep -o '[0-9]\+' | head -1)
+            DRAFT_LINKS=$(grep "Draft Links" link_health_report.md | grep -o '[0-9]\+' | head -1)
+            LINK_HEALTH=$(grep "Link Health" link_health_report.md | grep -o '[0-9]\+\.[0-9]\+' | head -1)
+            
+            echo "📊 Link Health Summary:"
+            echo "   📄 Files: $TOTAL_FILES"
+            echo "   🔗 Links: $TOTAL_LINKS"
+            echo "   ❌ Broken: $BROKEN_LINKS"
+            echo "   ⚠️  Draft: $DRAFT_LINKS"
+            echo "   💚 Health: $LINK_HEALTH%"
+            
+            # Set outputs for use in other steps
+            echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
+            echo "total_links=$TOTAL_LINKS" >> $GITHUB_OUTPUT
+            echo "broken_links=$BROKEN_LINKS" >> $GITHUB_OUTPUT
+            echo "draft_links=$DRAFT_LINKS" >> $GITHUB_OUTPUT
+            echo "link_health=$LINK_HEALTH" >> $GITHUB_OUTPUT
+            echo "success=$LINK_CHECK_SUCCESS" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload link health report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-health-report-${{ github.run_number }}
+          path: link_health_report.md
+          retention-days: 30
+
+      - name: Set workflow summary
+        if: always()
+        run: |
+          echo "## 🌱 Digital Garden Link Health Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| 📄 Files Scanned | ${{ steps.link_check.outputs.total_files }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🔗 Total Links | ${{ steps.link_check.outputs.total_links }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| ❌ Broken Links | ${{ steps.link_check.outputs.broken_links }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| ⚠️ Draft Links | ${{ steps.link_check.outputs.draft_links }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| 💚 Health Score | ${{ steps.link_check.outputs.link_health }}% |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ steps.link_check.outputs.success }}" = "true" ]; then
+            echo "✅ **Status**: All checks passed!" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ **Status**: Issues found - see report for details" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Warn on poor link health
+        if: steps.link_check.outputs.link_health != ''
+        run: |
+          HEALTH_SCORE="${{ steps.link_check.outputs.link_health }}"
+          if (( $(echo "$HEALTH_SCORE < 70" | bc -l) )); then
+            echo "⚠️ Link health is below 70%: ${HEALTH_SCORE}%"
+            echo "Consider reviewing and fixing broken links before deployment."
+          else
+            echo "✅ Link health is good: ${HEALTH_SCORE}%"
+          fi
+
   build-and-test:
     runs-on: ubuntu-latest
     permissions:
