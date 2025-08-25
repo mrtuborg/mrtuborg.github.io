@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-25T23:39:59.383+02:00","cssclasses":""}
+{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-25T23:58:46.134+02:00","cssclasses":""}
 ---
 
 
@@ -56,10 +56,10 @@ Everything here is a living document, continuously tended and evolved. Feel free
 
 *Security, compliance, and risk management*
 
-- **🌱 [RED Compliance](cybersecurity/red-compliance/)** - European cybersecurity certification process
-  - Documentation templates and evidence gathering
-  - Risk assessment methodologies
-  - Certification meeting notes and insights
+- **🌱 [Cybersecurity Overview](cybersecurity/)** - Security, compliance, and risk management exploration
+  - Regulatory compliance frameworks
+  - Threat modeling and risk assessment
+  - Security integration in development workflows
 
 ---
 
