@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-25T23:58:46.134+02:00","cssclasses":""}
+{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-26T00:13:25.868+02:00","cssclasses":""}
 ---
 
 
@@ -7,13 +7,51 @@
 
 This is my personal knowledge garden where ideas grow, evolve, and interconnect over time. Unlike a traditional blog, this space embraces the messy, iterative process of learning and building knowledge.
 
+## 🌱 What is Digital Gardening?
+
+**If you're finding articles that seem "incomplete" or "work in progress" - that's intentional!**
+
+Digital gardening is a different approach to sharing knowledge that prioritizes **learning in public** over polished final products. Here's what makes this space different:
+
+### 🔄 Living Documents vs Static Articles
+- **Traditional blogs**: Publish once, rarely update
+- **Digital gardens**: Continuously evolve, improve, and grow over time
+- **Why this matters**: You get to see knowledge develop, including the messy parts that lead to breakthroughs
+
+### 🕸️ Interconnected vs Linear
+- **Traditional blogs**: Read one article, then leave
+- **Digital gardens**: Ideas link to each other, creating knowledge networks
+- **Why this matters**: You discover unexpected connections between topics (like how ToF camera memory management relates to C code optimization)
+
+### 🎯 Atomic vs Monolithic
+- **Traditional blogs**: Long, comprehensive articles that try to cover everything
+- **Digital gardens**: Short, focused notes that can be combined in different ways
+- **Why this matters**: You can quickly find and implement specific techniques without reading entire guides
+
+### 📈 Process vs Product
+- **Traditional blogs**: Show only final results
+- **Digital gardens**: Show the learning journey, including failures and iterations
+- **Why this matters**: You learn not just what works, but how to think through problems
+
 ## How to Navigate This Garden
 
 **🌱 Seedlings** - Early ideas, rough notes, experiments  
 **🌿 Budding** - Developing concepts, work in progress  
 **🌳 Evergreen** - Mature thoughts (still growing!)
 
-Everything here is a living document, continuously tended and evolved. Feel free to explore any path that interests you.
+### 🧭 Navigation Tips
+- **Follow your curiosity** - Click on links that interest you, even if they seem unrelated
+- **Expect work-in-progress** - Incomplete notes often contain the most valuable insights
+- **Look for connections** - Notice how embedded systems concepts relate to AI optimization
+- **Return often** - Notes evolve, so revisiting can reveal new insights
+
+### 🔍 What You'll Find Here
+- **Technical deep-dives** broken into digestible, actionable pieces
+- **Real-world problem-solving** with all the messy details included
+- **Cross-domain insights** where hardware knowledge informs software practices
+- **Learning journeys** showing how understanding develops over time
+
+Everything here is a living document, continuously tended and evolved. Feel free to explore any path that interests you - the garden is designed for wandering, not just reading.
 
 ---
 
