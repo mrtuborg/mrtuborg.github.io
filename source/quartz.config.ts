@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 TRACE Grove",
+    pageTitle: "TRACE Grove",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
