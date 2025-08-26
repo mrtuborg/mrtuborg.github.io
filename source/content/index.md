@@ -1,25 +1,28 @@
 ---
-{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-26T00:23:39.573+02:00","cssclasses":""}
+{"publish":true,"title":"Digital Garden 🌱","created":"2025-07-07T12:51:53.526+02:00","modified":"2025-08-26T09:54:17.974+02:00","cssclasses":""}
 ---
 
 
-# Welcome to My Digital Garden 🌿
+# Welcome 🌿
 
 This is my personal knowledge garden where ideas grow, evolve, and interconnect over time. Unlike a traditional blog, this space embraces the messy, iterative process of learning and building knowledge.
 
-## 🌱 What is Digital Gardening?
-
-**If you're finding articles that seem "incomplete" or "work in progress" - that's intentional!**
-
-This is a digital garden, not a traditional blog. Content here evolves over time, connects across topics, and prioritizes **learning in public** over polished final products. → **[Learn more about digital gardening](What%20is%20Digital%20Gardening.md)**
-
 ## How to Navigate This Garden
+**[Learn more about digital gardening](What%20is%20Digital%20Gardening.md)**
 
 **🌱 Seedlings** - Early ideas, rough notes, experiments  
 **🌿 Budding** - Developing concepts, work in progress  
 **🌳 Evergreen** - Mature thoughts (still growing!)
 
+**If you're finding articles that seem "incomplete" or "work in progress" - that's intentional!**
+
 Everything here is a living document, continuously tended and evolved. Feel free to explore any path that interests you - the garden is designed for wandering, not just reading.
+
+This garden grows through:
+- **Continuous cultivation** - Regular updates and refinements
+- **Learning in public** - Sharing the process, not just results
+- **Contextual exploration** - Multiple pathways through the knowledge
+- **Cross-pollination** - Insights from one domain enriching others
 
 ---
 
@@ -97,26 +100,10 @@ Everything here is a living document, continuously tended and evolved. Feel free
 
 ---
 
-## Knowledge Interconnections
-
-This garden thrives on connections between domains:
-
-- **Hardware ↔ Software**: Embedded systems bridge physical and digital worlds
-- **Theory ↔ Practice**: Development practices refined through real-world application
-- **Individual ↔ Team**: Personal learning scaled to team methodologies
-- **Security ↔ Functionality**: Cybersecurity integrated into development workflows
-- **Manual ↔ Automated**: AI assistance enhancing traditional development practices
-
----
 
 ## About This Garden
 
-This garden grows through:
-- **Continuous cultivation** - Regular updates and refinements
-- **Interconnected growth** - Ideas linking and building upon each other  
-- **Learning in public** - Sharing the process, not just results
-- **Contextual exploration** - Multiple pathways through the knowledge
-- **Cross-pollination** - Insights from one domain enriching others
+
 
 *Last tended: 2025-08-25*
 
